@@ -69,6 +69,7 @@ namespace KCL_rosplan {
             ss << nameSrv.response.domain_name << "_prediction_table.csv";
             default_file_path = ss.str();
         }
+        node_handle->getParam("output_file_path", default_file_path);
     }
     
     RPPredictionInterface::~RPPredictionInterface()
